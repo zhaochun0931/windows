@@ -1,0 +1,18 @@
+Disable the Firewall
+
+
+netsh advfirewall set allprofiles state off
+netsh advfirewall set allprofiles state on
+
+
+
+
+
+
+  
+Run the Command to Open a Port
+
+
+netsh advfirewall firewall add rule name="Open TCP Port 8080" protocol=TCP dir=in localport=8080 action=allow
+netsh advfirewall firewall add rule name="Open UDP Port 8080" protocol=UDP dir=in localport=8080 action=allow
+
